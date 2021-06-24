@@ -1,0 +1,62 @@
+<vss>
+<step time="14500"        speed="20"/>
+<step time="14800"/>
+
+<step time="16000"        speed="19"/>
+<step time="16300"/>
+
+<step time="17500"        speed="18"/>
+<step time="17800"/>
+
+<step time="19000"        speed="17"/>
+<step time="19300"/>
+
+<step time="20500"        speed="16"/>
+<step time="20800"/>
+
+<step time="22000"        speed="15"/>
+<step time="22300"/>
+
+<step time="23500"        speed="14"/>
+<step time="23800"/>
+
+<step time="25000"        speed="13"/>
+<step time="25300"/>
+
+<step time="26500"        speed="12"/>
+<step time="26800"/>
+
+<step time="28000"        speed="11"/>
+<step time="28300"/>
+
+<step time="29500"        speed="10"/>
+<step time="29800"/>
+
+<step time="31000"        speed="9"/>
+<step time="31300"/>
+
+<step time="32500"        speed="8"/>
+<step time="32800"/>
+
+<step time="34000"        speed="7"/>
+<step time="34300"/>
+
+<step time="35500"        speed="6"/>
+<step time="35800"/>
+
+<step time="37000"        speed="5"/>
+<step time="37300"/>
+
+<step time="38500"        speed="4"/>
+<step time="38800"/>
+
+<step time="40000"        speed="3"/>
+<step time="40300"/>
+
+<step time="41500"        speed="2"/>
+<step time="41800"/>
+
+<step time="43000"        speed="1"/>
+<step time="43300"/>
+
+</vss>         

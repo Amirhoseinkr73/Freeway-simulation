@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 07/12/20 23:28:16 by Eclipse SUMO netedit Version 1.6.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\Amirhosein\Desktop\Simulation%20no.1\0%20perc\100%20kmph\0\net.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\Amirhosein\Desktop\Simulation%20no.1\0%20perc\100%20kmph\0\net.net.xml"/>
+        <output.street-names value="true"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <report>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<net version="1.6" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="-531358.63,-3953285.71" convBoundary="348.17,955.66,2174.66,2698.10" origBoundary="51.346802,35.722994,51.382586,35.749442" projParameter="+proj=utm +zone=39 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"/>
+
+    <type id="highway.bridleway" priority="1" numLanes="1" speed="2.78" allow="pedestrian" oneway="1" width="2.00"/>
+    <type id="highway.bus_guideway" priority="1" numLanes="1" speed="27.78" allow="bus" oneway="1"/>
+    <type id="highway.cycleway" priority="1" numLanes="1" speed="8.33" allow="bicycle" oneway="0" width="1.00"/>
+    <type id="highway.footway" priority="1" numLanes="1" speed="2.78" allow="pedestrian" oneway="1" width="2.00"/>
+    <type id="highway.ford" priority="1" numLanes="1" speed="2.78" allow="army" oneway="0"/>
+    <type id="highway.living_street" priority="2" numLanes="1" speed="2.78" disallow="tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.motorway" priority="14" numLanes="2" speed="39.44" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" oneway="1"/>
+    <type id="highway.motorway_link" priority="9" numLanes="1" speed="22.22" allow="private emergency authority army vip passenger hov taxi bus coach delivery truck trailer motorcycle evehicle custom1 custom2" oneway="1"/>
+    <type id="highway.path" priority="1" numLanes="1" speed="2.78" allow="pedestrian bicycle" oneway="1" width="2.00"/>
+    <type id="highway.pedestrian" priority="1" numLanes="1" speed="2.78" allow="pedestrian" oneway="1" width="2.00"/>
+    <type id="highway.primary" priority="12" numLanes="2" speed="27.78" disallow="tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.primary_link" priority="7" numLanes="1" speed="22.22" disallow="tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.raceway" priority="15" numLanes="2" speed="83.33" allow="vip" oneway="0"/>
+    <type id="highway.residential" priority="3" numLanes="1" speed="13.89" disallow="tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.secondary" priority="11" numLanes="1" speed="27.78" disallow="tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.secondary_link" priority="6" numLanes="1" speed="22.22" disallow="tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.service" priority="1" numLanes="1" speed="5.56" allow="pedestrian delivery bicycle" oneway="0"/>
+    <type id="highway.stairs" priority="1" numLanes="1" speed="1.39" allow="pedestrian" oneway="1" width="2.00"/>
+    <type id="highway.step" priority="1" numLanes="1" speed="1.39" allow="pedestrian" oneway="1" width="2.00"/>
+    <type id="highway.steps" priority="1" numLanes="1" speed="1.39" allow="pedestrian" oneway="1" width="2.00"/>
+    <type id="highway.tertiary" priority="10" numLanes="1" speed="22.22" disallow="tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.tertiary_link" priority="5" numLanes="1" speed="22.22" disallow="tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.track" priority="1" numLanes="1" speed="5.56" disallow="tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.trunk" priority="13" numLanes="2" speed="27.78" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.trunk_link" priority="8" numLanes="1" speed="22.22" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.unclassified" priority="4" numLanes="1" speed="13.89" disallow="tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.unsurfaced" priority="1" numLanes="1" speed="8.33" disallow="tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="railway.highspeed" priority="21" numLanes="1" speed="69.44" allow="rail_fast" oneway="1"/>
+    <type id="railway.light_rail" priority="19" numLanes="1" speed="27.78" allow="rail_urban" oneway="1"/>
+    <type id="railway.preserved" priority="16" numLanes="1" speed="27.78" allow="rail" oneway="1"/>
+    <type id="railway.rail" priority="20" numLanes="1" speed="44.44" allow="rail" oneway="1"/>
+    <type id="railway.subway" priority="18" numLanes="1" speed="27.78" allow="rail_urban" oneway="1"/>
+    <type id="railway.tram" priority="17" numLanes="1" speed="13.89" allow="tram" oneway="1"/>
+
+    <edge id=":4454678647_0" function="internal">
+        <lane id=":4454678647_0_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.25" shape="1136.68,1784.82 1136.48,1784.85"/>
+        <lane id=":4454678647_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.25" shape="1136.25,1781.65 1135.95,1781.69"/>
+    </edge>
+    <edge id=":4454678660_0" function="internal">
+        <lane id=":4454678660_0_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="635.76,1881.78 635.84,1881.76"/>
+        <lane id=":4454678660_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="635.12,1878.64 635.04,1878.66"/>
+    </edge>
+    <edge id=":58683364#2-AddedOffRampNode_0" function="internal">
+        <lane id=":58683364#2-AddedOffRampNode_0_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="446.28,1923.68 446.28,1923.68"/>
+        <lane id=":58683364#2-AddedOffRampNode_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="445.60,1920.56 445.60,1920.56"/>
+    </edge>
+    <edge id=":gneJ0_0" function="internal">
+        <lane id=":gneJ0_0_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="1506.15,1765.17 1506.15,1765.17"/>
+        <lane id=":gneJ0_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="1506.41,1761.99 1506.41,1761.99"/>
+    </edge>
+    <edge id=":gneJ1_0" function="internal">
+        <lane id=":gneJ1_0_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.30" shape="1397.05,1761.09 1396.75,1761.10"/>
+        <lane id=":gneJ1_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.30" shape="1396.95,1757.90 1396.65,1757.91"/>
+    </edge>
+    <edge id=":gneJ2_0" function="internal">
+        <lane id=":gneJ2_0_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.30" shape="1303.70,1766.81 1303.40,1766.84"/>
+        <lane id=":gneJ2_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.30" shape="1303.41,1763.62 1303.12,1763.65"/>
+    </edge>
+    <edge id=":gneJ3_0" function="internal">
+        <lane id=":gneJ3_0_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="1215.46,1775.26 1215.46,1775.26"/>
+        <lane id=":gneJ3_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="1215.12,1772.08 1215.12,1772.08"/>
+    </edge>
+    <edge id=":gneJ4_0" function="internal">
+        <lane id=":gneJ4_0_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.30" shape="1023.25,1804.28 1022.96,1804.33"/>
+        <lane id=":gneJ4_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.30" shape="1022.70,1801.13 1022.40,1801.18"/>
+    </edge>
+    <edge id=":gneJ5_0" function="internal">
+        <lane id=":gneJ5_0_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="926.24,1823.10 926.24,1823.10"/>
+        <lane id=":gneJ5_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="925.60,1819.96 925.60,1819.96"/>
+    </edge>
+    <edge id=":gneJ6_0" function="internal">
+        <lane id=":gneJ6_0_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="840.34,1840.45 840.34,1840.45"/>
+        <lane id=":gneJ6_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="839.70,1837.31 839.70,1837.31"/>
+    </edge>
+    <edge id=":gneJ7_0" function="internal">
+        <lane id=":gneJ7_0_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="742.13,1860.29 742.13,1860.29"/>
+        <lane id=":gneJ7_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="741.49,1857.15 741.49,1857.15"/>
+    </edge>
+    <edge id=":gneJ8_0" function="internal">
+        <lane id=":gneJ8_0_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="536.78,1904.24 536.78,1904.24"/>
+        <lane id=":gneJ8_0_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="0.10" shape="536.10,1901.12 536.10,1901.12"/>
+    </edge>
+
+    <edge id="gneE13" from="58683361-AddedOnRampNode" to="gneJ0" name="بزرگراه آیت الله حکیم" priority="13" type="highway.trunk" spreadType="center" length="100.00" shape="1619.49,1777.12 1584.94,1771.76 1521.00,1764.80 1506.28,1763.58">
+        <lane id="gneE13_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="1619.24,1778.70 1584.73,1773.35 1520.85,1766.39 1506.15,1765.17">
+            <param key="origId" value="58683361 58683364"/>
+        </lane>
+        <lane id="gneE13_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="1619.74,1775.54 1585.15,1770.17 1521.15,1763.21 1506.41,1761.99">
+            <param key="origId" value="58683361 58683364"/>
+        </lane>
+    </edge>
+    <edge id="gneE14" from="gneJ0" to="gneJ1" name="بزرگراه آیت الله حکیم" priority="13" type="highway.trunk" spreadType="center" length="100.00" shape="1506.28,1763.58 1487.81,1762.05 1455.36,1759.78 1408.80,1759.10 1396.85,1759.50">
+        <lane id="gneE14_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="1506.15,1765.17 1487.69,1763.65 1455.29,1761.38 1408.82,1760.70 1397.05,1761.09">
+            <param key="origId" value="58683361 58683364"/>
+        </lane>
+        <lane id="gneE14_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="1506.41,1761.99 1487.93,1760.45 1455.43,1758.18 1408.78,1757.50 1396.95,1757.90">
+            <param key="origId" value="58683361 58683364"/>
+        </lane>
+    </edge>
+    <edge id="gneE15" from="gneJ1" to="gneJ2" name="بزرگراه آیت الله حکیم" priority="13" type="highway.trunk" spreadType="center" length="100.00" shape="1396.85,1759.50 1364.17,1760.61 1316.42,1764.05 1303.41,1765.23">
+        <lane id="gneE15_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="1396.75,1761.10 1364.25,1762.21 1316.55,1765.64 1303.70,1766.81">
+            <param key="origId" value="58683361 58683364"/>
+        </lane>
+        <lane id="gneE15_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="1396.65,1757.91 1364.09,1759.01 1316.29,1762.46 1303.41,1763.62">
+            <param key="origId" value="58683361 58683364"/>
+        </lane>
+    </edge>
+    <edge id="gneE16" from="gneJ2" to="gneJ3" name="بزرگراه آیت الله حکیم" priority="13" type="highway.trunk" spreadType="center" length="100.00" shape="1303.41,1765.23 1246.75,1770.35 1215.29,1773.67">
+        <lane id="gneE16_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="1303.40,1766.84 1246.91,1771.94 1215.46,1775.26">
+            <param key="origId" value="58683361 58683364"/>
+        </lane>
+        <lane id="gneE16_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="1303.12,1763.65 1246.59,1768.76 1215.12,1772.08">
+            <param key="origId" value="58683361 58683364"/>
+        </lane>
+    </edge>
+    <edge id="gneE17" from="gneJ3" to="4454678647" name="بزرگراه آیت الله حکیم" priority="13" type="highway.trunk" spreadType="center" length="85.21" shape="1215.29,1773.67 1177.91,1777.62 1136.34,1783.25">
+        <lane id="gneE17_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="85.21" shape="1215.46,1775.26 1178.10,1779.21 1136.68,1784.82">
+            <param key="origId" value="58683361 58683364"/>
+        </lane>
+        <lane id="gneE17_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="85.21" shape="1215.12,1772.08 1177.72,1776.03 1136.25,1781.65">
+            <param key="origId" value="58683361 58683364"/>
+        </lane>
+    </edge>
+    <edge id="gneE18" from="4454678647" to="gneJ4" name="بزرگراه آیت الله حکیم" priority="13" type="highway.trunk" spreadType="center" length="100.00" shape="1136.34,1783.25 1088.14,1791.28 1022.83,1802.73">
+        <lane id="gneE18_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="1136.48,1784.85 1088.41,1792.86 1023.25,1804.28">
+            <param key="origId" value="58683364"/>
+        </lane>
+        <lane id="gneE18_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="1135.95,1781.69 1087.87,1789.70 1022.70,1801.13">
+            <param key="origId" value="58683364"/>
+        </lane>
+    </edge>
+    <edge id="gneE19" from="gneJ4" to="gneJ5" name="بزرگراه آیت الله حکیم" priority="13" type="highway.trunk" spreadType="center" length="100.00" shape="1022.83,1802.73 1017.95,1803.59 961.61,1814.32 925.92,1821.53">
+        <lane id="gneE19_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="1022.96,1804.33 1018.24,1805.16 961.92,1815.89 926.24,1823.10">
+            <param key="origId" value="58683364"/>
+        </lane>
+        <lane id="gneE19_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="1022.40,1801.18 1017.66,1802.02 961.30,1812.75 925.60,1819.96">
+            <param key="origId" value="58683364"/>
+        </lane>
+    </edge>
+    <edge id="gneE20" from="gneJ5" to="gneJ6" name="بزرگراه آیت الله حکیم" priority="13" type="highway.trunk" spreadType="center" length="100.00">
+        <lane id="gneE20_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="926.24,1823.10 840.34,1840.45">
+            <param key="origId" value="58683364"/>
+        </lane>
+        <lane id="gneE20_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="925.60,1819.96 839.70,1837.31">
+            <param key="origId" value="58683364"/>
+        </lane>
+    </edge>
+    <edge id="gneE21" from="gneJ6" to="gneJ7" name="بزرگراه آیت الله حکیم" priority="13" type="highway.trunk" spreadType="center" length="100.00">
+        <lane id="gneE21_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="840.34,1840.45 742.13,1860.29">
+            <param key="origId" value="58683364"/>
+        </lane>
+        <lane id="gneE21_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="839.70,1837.31 741.49,1857.15">
+            <param key="origId" value="58683364"/>
+        </lane>
+    </edge>
+    <edge id="gneE22" from="gneJ7" to="4454678660" name="بزرگراه آیت الله حکیم" priority="13" type="highway.trunk" spreadType="center" length="110.11">
+        <lane id="gneE22_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="110.11" shape="742.13,1860.29 635.76,1881.78">
+            <param key="origId" value="58683364"/>
+        </lane>
+        <lane id="gneE22_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="110.11" shape="741.49,1857.15 635.12,1878.64">
+            <param key="origId" value="58683364"/>
+        </lane>
+    </edge>
+    <edge id="gneE23" from="4454678660" to="gneJ8" name="بزرگراه آیت الله حکیم" priority="13" type="highway.trunk" spreadType="center" length="100.00" shape="635.44,1880.21 606.89,1887.54 536.44,1902.68">
+        <lane id="gneE23_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="635.84,1881.76 607.26,1889.10 536.78,1904.24">
+            <param key="origId" value="58683364"/>
+        </lane>
+        <lane id="gneE23_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="635.04,1878.66 606.52,1885.98 536.10,1901.12">
+            <param key="origId" value="58683364"/>
+        </lane>
+    </edge>
+    <edge id="gneE24" from="gneJ8" to="58683364#2-AddedOffRampNode" name="بزرگراه آیت الله حکیم" priority="13" type="highway.trunk" spreadType="center" length="94.10">
+        <lane id="gneE24_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="94.10" shape="536.78,1904.24 446.28,1923.68">
+            <param key="origId" value="58683364"/>
+        </lane>
+        <lane id="gneE24_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="94.10" shape="536.10,1901.12 445.60,1920.56">
+            <param key="origId" value="58683364"/>
+        </lane>
+    </edge>
+    <edge id="gneE25" from="58683364#2-AddedOffRampNode" to="26527608" name="بزرگراه آیت الله حکیم" priority="13" type="highway.trunk" spreadType="center">
+        <lane id="gneE25_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="446.28,1923.68 348.51,1944.69">
+            <param key="origId" value="58683364"/>
+        </lane>
+        <lane id="gneE25_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="100.00" shape="445.60,1920.56 347.83,1941.57">
+            <param key="origId" value="58683364"/>
+        </lane>
+    </edge>
+
+    <junction id="1653116656" type="dead_end" x="1383.11" y="2698.10" incLanes="" intLanes="" shape="1383.11,2698.10"/>
+    <junction id="26527608" type="dead_end" x="348.17" y="1943.13" incLanes="gneE25_0 gneE25_1" intLanes="" shape="348.84,1946.26 347.50,1940.00"/>
+    <junction id="26587339" type="dead_end" x="2174.66" y="955.66" incLanes="" intLanes="" shape="2174.66,955.66"/>
+    <junction id="4454678647" type="priority" x="1136.34" y="1783.25" incLanes="gneE17_0 gneE17_1" intLanes=":4454678647_0_0 :4454678647_0_1" shape="1136.90,1786.40 1136.04,1780.06 1135.69,1780.11 1136.74,1786.43">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="4454678660" type="priority" x="635.44" y="1880.21" incLanes="gneE22_0 gneE22_1" intLanes=":4454678660_0_0 :4454678660_0_1" shape="636.16,1883.33 634.89,1877.06 634.56,1877.13">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="58683361-AddedOnRampNode" type="dead_end" x="1619.49" y="1777.12" incLanes="" intLanes="" shape="1619.98,1773.96 1619.00,1780.28"/>
+    <junction id="58683364#2-AddedOffRampNode" type="priority" x="445.94" y="1922.12" incLanes="gneE24_0 gneE24_1" intLanes=":58683364#2-AddedOffRampNode_0_0 :58683364#2-AddedOffRampNode_0_1" shape="446.61,1925.25 445.27,1918.99 446.61,1925.25">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="gneJ0" type="priority" x="1506.28" y="1763.58" incLanes="gneE13_0 gneE13_1" intLanes=":gneJ0_0_0 :gneJ0_0_1" shape="1506.02,1766.77 1506.54,1760.39 1506.02,1766.77">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="gneJ1" type="priority" x="1396.85" y="1759.50" incLanes="gneE14_0 gneE14_1" intLanes=":gneJ1_0_0 :gneJ1_0_1" shape="1397.11,1762.69 1396.89,1756.30 1396.59,1756.31 1396.81,1762.70">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="gneJ2" type="priority" x="1303.41" y="1765.23" incLanes="gneE15_0 gneE15_1" intLanes=":gneJ2_0_0 :gneJ2_0_1" shape="1303.85,1768.40 1303.27,1762.03 1302.97,1762.06 1303.55,1768.43">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="gneJ3" type="priority" x="1215.29" y="1773.67" incLanes="gneE16_0 gneE16_1" intLanes=":gneJ3_0_0 :gneJ3_0_1" shape="1215.63,1776.85 1214.95,1770.49 1215.63,1776.85">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="gneJ4" type="priority" x="1022.83" y="1802.73" incLanes="gneE18_0 gneE18_1" intLanes=":gneJ4_0_0 :gneJ4_0_1" shape="1023.53,1805.86 1022.43,1799.55 1022.13,1799.60 1023.24,1805.91">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="gneJ5" type="priority" x="925.92" y="1821.53" incLanes="gneE19_0 gneE19_1" intLanes=":gneJ5_0_0 :gneJ5_0_1" shape="926.55,1824.67 925.29,1818.39 926.55,1824.67">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="gneJ6" type="priority" x="840.02" y="1838.88" incLanes="gneE20_0 gneE20_1" intLanes=":gneJ6_0_0 :gneJ6_0_1" shape="840.65,1842.02 839.39,1835.74 840.65,1842.02">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="gneJ7" type="priority" x="741.81" y="1858.72" incLanes="gneE21_0 gneE21_1" intLanes=":gneJ7_0_0 :gneJ7_0_1" shape="742.44,1861.86 741.18,1855.58 742.44,1861.86">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+    <junction id="gneJ8" type="priority" x="536.44" y="1902.68" incLanes="gneE23_0 gneE23_1" intLanes=":gneJ8_0_0 :gneJ8_0_1" shape="537.11,1905.81 535.77,1899.55 537.11,1905.81">
+        <request index="0" response="00" foes="00" cont="0"/>
+        <request index="1" response="00" foes="00" cont="0"/>
+    </junction>
+
+    <connection from="gneE13" to="gneE14" fromLane="0" toLane="0" via=":gneJ0_0_0" dir="s" state="M"/>
+    <connection from="gneE13" to="gneE14" fromLane="1" toLane="1" via=":gneJ0_0_1" dir="s" state="M"/>
+    <connection from="gneE14" to="gneE15" fromLane="0" toLane="0" via=":gneJ1_0_0" dir="s" state="M"/>
+    <connection from="gneE14" to="gneE15" fromLane="1" toLane="1" via=":gneJ1_0_1" dir="s" state="M"/>
+    <connection from="gneE15" to="gneE16" fromLane="0" toLane="0" via=":gneJ2_0_0" dir="s" state="M"/>
+    <connection from="gneE15" to="gneE16" fromLane="1" toLane="1" via=":gneJ2_0_1" dir="s" state="M"/>
+    <connection from="gneE16" to="gneE17" fromLane="0" toLane="0" via=":gneJ3_0_0" dir="s" state="M"/>
+    <connection from="gneE16" to="gneE17" fromLane="1" toLane="1" via=":gneJ3_0_1" dir="s" state="M"/>
+    <connection from="gneE17" to="gneE18" fromLane="0" toLane="0" via=":4454678647_0_0" dir="s" state="M"/>
+    <connection from="gneE17" to="gneE18" fromLane="1" toLane="1" via=":4454678647_0_1" dir="s" state="M"/>
+    <connection from="gneE18" to="gneE19" fromLane="0" toLane="0" via=":gneJ4_0_0" dir="s" state="M"/>
+    <connection from="gneE18" to="gneE19" fromLane="1" toLane="1" via=":gneJ4_0_1" dir="s" state="M"/>
+    <connection from="gneE19" to="gneE20" fromLane="0" toLane="0" via=":gneJ5_0_0" dir="s" state="M"/>
+    <connection from="gneE19" to="gneE20" fromLane="1" toLane="1" via=":gneJ5_0_1" dir="s" state="M"/>
+    <connection from="gneE20" to="gneE21" fromLane="0" toLane="0" via=":gneJ6_0_0" dir="s" state="M"/>
+    <connection from="gneE20" to="gneE21" fromLane="1" toLane="1" via=":gneJ6_0_1" dir="s" state="M"/>
+    <connection from="gneE21" to="gneE22" fromLane="0" toLane="0" via=":gneJ7_0_0" dir="s" state="M"/>
+    <connection from="gneE21" to="gneE22" fromLane="1" toLane="1" via=":gneJ7_0_1" dir="s" state="M"/>
+    <connection from="gneE22" to="gneE23" fromLane="0" toLane="0" via=":4454678660_0_0" dir="s" state="M"/>
+    <connection from="gneE22" to="gneE23" fromLane="1" toLane="1" via=":4454678660_0_1" dir="s" state="M"/>
+    <connection from="gneE23" to="gneE24" fromLane="0" toLane="0" via=":gneJ8_0_0" dir="s" state="M"/>
+    <connection from="gneE23" to="gneE24" fromLane="1" toLane="1" via=":gneJ8_0_1" dir="s" state="M"/>
+    <connection from="gneE24" to="gneE25" fromLane="0" toLane="0" via=":58683364#2-AddedOffRampNode_0_0" dir="s" state="M"/>
+    <connection from="gneE24" to="gneE25" fromLane="1" toLane="1" via=":58683364#2-AddedOffRampNode_0_1" dir="s" state="M"/>
+
+    <connection from=":4454678647_0" to="gneE18" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":4454678647_0" to="gneE18" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":4454678660_0" to="gneE23" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":4454678660_0" to="gneE23" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":58683364#2-AddedOffRampNode_0" to="gneE25" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":58683364#2-AddedOffRampNode_0" to="gneE25" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":gneJ0_0" to="gneE14" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ0_0" to="gneE14" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":gneJ1_0" to="gneE15" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ1_0" to="gneE15" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":gneJ2_0" to="gneE16" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ2_0" to="gneE16" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":gneJ3_0" to="gneE17" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ3_0" to="gneE17" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":gneJ4_0" to="gneE19" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ4_0" to="gneE19" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":gneJ5_0" to="gneE20" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ5_0" to="gneE20" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":gneJ6_0" to="gneE21" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ6_0" to="gneE21" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":gneJ7_0" to="gneE22" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ7_0" to="gneE22" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":gneJ8_0" to="gneE24" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":gneJ8_0" to="gneE24" fromLane="1" toLane="1" dir="s" state="M"/>
+
+</net>

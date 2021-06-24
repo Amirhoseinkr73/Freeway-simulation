@@ -1,0 +1,91 @@
+<routes>
+
+<vTypeDistribution id="typedist1">
+    <vType id="HumanVehicle"      carFollowModel="Krauss" accel="3.5" decel="4.5" emergencyDecel="8" sigma="0.5" tau="0.9" minGap="1.5" length="5" maxSpeed="27.77" probability="1" laneChangeModel="LC2013" lcAssertive="1.3" color="1,0,0"/>
+    <vType id="AutonomousVehicle" carFollowModel="Krauss" accel="3.8" decel="4.5" emergencyDecel="8" sigma="0.0" tau="0.6" minGap="0.5" length="5" maxSpeed="27.77" probability="0" laneChangeModel="LC2013" lcAssertive="0.9" color="0,0,255"/>
+		
+
+</vTypeDistribution>
+
+
+																			  
+<flow type ="typedist1" id="0"  from="gneE13" to="gneE25" begin="0"      end="180"     vehsPerHour="1"       departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="1"  from="gneE13" to="gneE25" begin="180"    end="360"     vehsPerHour="100"     departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="2"  from="gneE13" to="gneE25" begin="360"    end="540"     vehsPerHour="200"     departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="3"  from="gneE13" to="gneE25" begin="540"    end="720"     vehsPerHour="300"     departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="4"  from="gneE13" to="gneE25" begin="720"    end="900"     vehsPerHour="400"     departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="5"  from="gneE13" to="gneE25" begin="900"    end="1080"    vehsPerHour="500"     departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="6"  from="gneE13" to="gneE25" begin="1080"   end="1260"    vehsPerHour="600"     departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="7"  from="gneE13" to="gneE25" begin="1260"   end="1440"    vehsPerHour="700"     departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="8"  from="gneE13" to="gneE25" begin="1440"   end="1620"    vehsPerHour="800"     departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="9"  from="gneE13" to="gneE25" begin="1620"   end="1800"    vehsPerHour="900"     departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="10" from="gneE13" to="gneE25" begin="1800"   end="1980"    vehsPerHour="1000"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="11" from="gneE13" to="gneE25" begin="1980"   end="2160"    vehsPerHour="1100"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="12" from="gneE13" to="gneE25" begin="2160"   end="2340"    vehsPerHour="1200"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="13" from="gneE13" to="gneE25" begin="2340"   end="2520"    vehsPerHour="1300"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="14" from="gneE13" to="gneE25" begin="2520"   end="2700"    vehsPerHour="1400"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="15" from="gneE13" to="gneE25" begin="2700"   end="2880"    vehsPerHour="1500"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="16" from="gneE13" to="gneE25" begin="2880"   end="3060"    vehsPerHour="1600"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="17" from="gneE13" to="gneE25" begin="3060"   end="3240"    vehsPerHour="1700"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="18" from="gneE13" to="gneE25" begin="3240"   end="3420"    vehsPerHour="1800"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="19" from="gneE13" to="gneE25" begin="3420"   end="3600"    vehsPerHour="1900"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="20" from="gneE13" to="gneE25" begin="3600"   end="3780"    vehsPerHour="2000"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="21" from="gneE13" to="gneE25" begin="3780"   end="3960"    vehsPerHour="2100"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="22" from="gneE13" to="gneE25" begin="3960"   end="4140"    vehsPerHour="2200"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="23" from="gneE13" to="gneE25" begin="4140"   end="4320"    vehsPerHour="2300"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="24" from="gneE13" to="gneE25" begin="4320"   end="4500"    vehsPerHour="2400"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="25" from="gneE13" to="gneE25" begin="4500"   end="4680"    vehsPerHour="2500"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="26" from="gneE13" to="gneE25" begin="4680"   end="4860"    vehsPerHour="2600"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="27" from="gneE13" to="gneE25" begin="4860"   end="5040"    vehsPerHour="2700"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="28" from="gneE13" to="gneE25" begin="5040"   end="5220"    vehsPerHour="2800"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="29" from="gneE13" to="gneE25" begin="5220"   end="5400"    vehsPerHour="2900"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="30" from="gneE13" to="gneE25" begin="5400"   end="5580"    vehsPerHour="3000"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="31" from="gneE13" to="gneE25" begin="5580"   end="5760"    vehsPerHour="3100"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="32" from="gneE13" to="gneE25" begin="5760"   end="5940"    vehsPerHour="3200"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="33" from="gneE13" to="gneE25" begin="5940"   end="6120"    vehsPerHour="3300"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="34" from="gneE13" to="gneE25" begin="6120"   end="6300"    vehsPerHour="3400"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="35" from="gneE13" to="gneE25" begin="6300"   end="6480"    vehsPerHour="3500"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="36" from="gneE13" to="gneE25" begin="6480"   end="6660"    vehsPerHour="3600"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="37" from="gneE13" to="gneE25" begin="6660"   end="6840"    vehsPerHour="3700"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="38" from="gneE13" to="gneE25" begin="6840"   end="7020"    vehsPerHour="3800"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="39" from="gneE13" to="gneE25" begin="7020"   end="7200"    vehsPerHour="3900"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="40" from="gneE13" to="gneE25" begin="7200"   end="7380"    vehsPerHour="4000"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="41" from="gneE13" to="gneE25" begin="7380"   end="7560"    vehsPerHour="4100"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="42" from="gneE13" to="gneE25" begin="7560"   end="7740"    vehsPerHour="4200"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="43" from="gneE13" to="gneE25" begin="7740"   end="7920"    vehsPerHour="4300"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="44" from="gneE13" to="gneE25" begin="7920"   end="8100"    vehsPerHour="4400"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="45" from="gneE13" to="gneE25" begin="8100"   end="8280"    vehsPerHour="4500"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="46" from="gneE13" to="gneE25" begin="8280"   end="8460"    vehsPerHour="4600"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="47" from="gneE13" to="gneE25" begin="8460"   end="8640"    vehsPerHour="4700"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="48" from="gneE13" to="gneE25" begin="8640"   end="8820"    vehsPerHour="4800"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="49" from="gneE13" to="gneE25" begin="8820"   end="9000"    vehsPerHour="4900"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="50" from="gneE13" to="gneE25" begin="9000"   end="9180"    vehsPerHour="5000"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="51" from="gneE13" to="gneE25" begin="9180"   end="9360"    vehsPerHour="5100"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="52" from="gneE13" to="gneE25" begin="9360"   end="9540"    vehsPerHour="5200"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="53" from="gneE13" to="gneE25" begin="9540"   end="9720"    vehsPerHour="5300"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="54" from="gneE13" to="gneE25" begin="9720"   end="9900"    vehsPerHour="5400"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="55" from="gneE13" to="gneE25" begin="9900"   end="10080"   vehsPerHour="5500"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="56" from="gneE13" to="gneE25" begin="10080"  end="10260"   vehsPerHour="5600"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="57" from="gneE13" to="gneE25" begin="10260"  end="10440"   vehsPerHour="5700"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="58" from="gneE13" to="gneE25" begin="10440"  end="10620"   vehsPerHour="5800"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="59" from="gneE13" to="gneE25" begin="10620"  end="10800"   vehsPerHour="5900"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="60" from="gneE13" to="gneE25" begin="10800"  end="10980"   vehsPerHour="6000"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="61" from="gneE13" to="gneE25" begin="10980"  end="11160"   vehsPerHour="6100"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="62" from="gneE13" to="gneE25" begin="11160"  end="11340"   vehsPerHour="6200"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="63" from="gneE13" to="gneE25" begin="11340"  end="11520"   vehsPerHour="6300"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="64" from="gneE13" to="gneE25" begin="11520"  end="11700"   vehsPerHour="6400"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="65" from="gneE13" to="gneE25" begin="11700"  end="11880"   vehsPerHour="6500"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="66" from="gneE13" to="gneE25" begin="11880"  end="12060"   vehsPerHour="6600"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="67" from="gneE13" to="gneE25" begin="12060"  end="12240"   vehsPerHour="6700"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="68" from="gneE13" to="gneE25" begin="12240"  end="12420"   vehsPerHour="6800"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="69" from="gneE13" to="gneE25" begin="12420"  end="12600"   vehsPerHour="6900"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="70" from="gneE13" to="gneE25" begin="12600"  end="12780"   vehsPerHour="7000"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="71" from="gneE13" to="gneE25" begin="12780"  end="12960"   vehsPerHour="7100"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="72" from="gneE13" to="gneE25" begin="12960"  end="13140"   vehsPerHour="7200"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="73" from="gneE13" to="gneE25" begin="13140"  end="13320"   vehsPerHour="7300"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="74" from="gneE13" to="gneE25" begin="13320"  end="13500"   vehsPerHour="7400"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="75" from="gneE13" to="gneE25" begin="13500"  end="13680"   vehsPerHour="7500"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="76" from="gneE13" to="gneE25" begin="13680"  end="13860"   vehsPerHour="7600"    departPos="base"   departSpeed="max"   departLane="best"/>
+<flow type ="typedist1" id="77" from="gneE13" to="gneE25" begin="13860"  end="44040"   vehsPerHour="7700"    departPos="base"   departSpeed="max"   departLane="best"/>
+                                                                      
+</routes>                                                             
